@@ -188,7 +188,6 @@ footer{
         font-size: 110%;
     }
     #action{
-        border: 1px dotted red;
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
