@@ -12,6 +12,10 @@ button{
     outline: none;
     border: 0;
 }
+body{
+    height: 100vh;
+    width: 100vw;
+}
 #banner {
     display: flex;
     align-items: center;
@@ -59,8 +63,8 @@ button{
     font-family: monospace;
 }
 .chevron{
-    height: 5em;
-    width: 5em;
+    height: 2em;
+    width: 2em;
     border: 0;
     /* border: 1px solid red; */
     position: absolute;
@@ -83,7 +87,10 @@ button{
 #action{
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 2em;
+    width: 50%;
+    margin: 0 auto; 
+    padding: 3em 1em;
 }
 #restartBtn{
     height: 4em;
@@ -103,16 +110,18 @@ button{
     background-image: url(help-circle-outline.svg);
 }
 #hintBtn.hover{
-    box-shadow: 0 3px 5px #CCC;
+    box-shadow: 0 3px 5px #ccc;
 
 }
 #checkBtn{
+    margin-left: auto;
     border-radius: 2em ;
-    background-color: #8b008b;
+    background-color: #6211A3;
     display: flex;
     align-items: center;
     padding-left: 2em;
     letter-spacing: 3px;
+    
 }
 #checkBtn > span{
  color: #fff;
@@ -128,5 +137,81 @@ button{
 #cup{
     height: 4em;
     width: 4em;
-    background-image: url(t);
+    background-image: url(eye-outline.svg);
+    position: relative;
+}
+#cup >i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: #033475;
+    font-weight: 500;
+    color: #fff;
+    padding: .3em .5em;
+}
+#backward,#forward,#bulb,#restartBtn,#hintBtn,#cup,#checkBtn >i{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+footer{
+    background-color: #f9f9f9;
+    position: sticky;
+    top: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#author{
+    color: #555;
+}
+/*responsive design*/
+@media(width <= 480px)   {
+    .tile{
+        font-size: 100%;
+    }
+    #forward,#backward{
+        background-size: 30%;
+    }
+    #word{
+        position: static;
+    }
+    #backward{
+        left: 0;
+    }
+    #forward{
+        right: 0;
+    }
+    #txt{
+        font-size: 110%;
+    }
+    #action{
+        border: 1px dotted red;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #checkBtn{
+        margin-left: 0;
+    }
+    #restartBtn,#hintBtn,#cup{
+        background-size: 40%;
+        height: 3em;
+        width: 3em;
+    }
+    #cup >i{
+        font-size: 70%;
+    }
+    #checkBtn >i{
+        height: 2.5em;
+        width: 2.5em;
+    }
+    #checkBtn >span{
+        letter-spacing: 0;
+    }
+    #checkBtn{
+        padding-left: 1em;
+    }
 }

@@ -1,0 +1,161 @@
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    color: #4e6;
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+#banner{
+    font-size: 5em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -5px ;
+    animation: blink 2s 2s infinite;
+
+}
+@keyframes blink{
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity:1;}
+  
+}
+#banner >p::first-letter{
+    color: #ed5
+}
+#button{
+    background: none;
+    outline:none ;
+    border: 0;
+}
+.tile{
+    border:solid#03347511;
+    font-size: 500%;
+    font-weight: 700;
+    font-family: monospace;
+}
+#word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    gap: 1em;
+    position: relative;
+
+}
+#hint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+#bulb{
+    height: 3em;
+    width: 3em;
+ background-image: url(bulb-outline.svg);
+}
+#txt{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    font-size: 150%;
+    font-weight: 400;
+}
+.chevron{
+  height: 4em;  
+  width: 4em;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  border-radius: 7px;
+  transition: box-shadow .5s;
+}
+.chevron:hover{
+    box-shadow: 0px 3px 5px #999;
+}
+#forward{
+ left: 5em;
+ background-image: url(chevron-back-outline.svg);
+}
+#backward{
+    right: 5em;
+    background-image: url(chevron-forward-outline.svg);
+}
+#action{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#restartBtn{
+    height: 4em;
+    width: 4em;
+    /* border: 1px solid blue; */
+    border-radius: 7px;
+    background-image: url(refresh-outline.svg);
+    border: none;
+}
+#restartBtn:hover{
+    box-shadow: 0px 3px 5px #999;
+}
+#hintBtn{
+    height: 4em;
+    width: 4em;
+    /* border: 1px solid blue; */
+    border-radius: 7px;
+    border: none;
+    background-image: url(help-circle-outline.svg);
+}
+#hintBtn:hover{
+    box-shadow: 0px 3px 5px #999;
+}
+#checkBtn{
+     /* border: none */
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+    letter-spacing: 3px;
+    background-color: #8b008b;
+
+    width: 9em;
+}
+#checkBtn >span{
+    color: #fff;
+    font-size: 110%;
+    font-weight: 500;
+}
+#check >i{
+    height: 4em;
+    width: 4em;
+    border: #4e6;
+    background-image: url(arrow-forward-outline.svg);
+    
+}
+#T{
+    color: blue;
+}
+#O{
+    color: aquamarine;
+}
+#D{
+    color: antiquewhite;
+}
+#L{
+    color: firebrick;
+}
+#E{
+    color: darkgrey;
+}
+#author{
+    /* border: 1px solid grey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7em;
+    font-weight: 500;
+}
