@@ -91,6 +91,11 @@ body{
     width: 50%;
     margin: 0 auto; 
     padding: 3em 1em;
+    /* background-image: url(error_fawzi_mourad.gif);  */
+    background-size: 30%;
+    background-repeat: no-repeat;
+    border-radius: 2em;
+    background-position: 70%  center;
 }
 #restartBtn{
     height: 4em;
