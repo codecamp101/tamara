@@ -5,7 +5,7 @@ const txt=document.querySelector('#txt')
     writeTxt ();
 });
 function writeTxt() {
-    const text ="ANIME'S THE GOAT";
+    const text ="ANIME'S THE GOAT BECAUSE OF";
     txt.textContent =''
     let count=0;
     const id = setInterval(() => {

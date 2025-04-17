@@ -137,12 +137,30 @@ output{
     background-repeat:no-repeat ;
     background-position: top;
     background-size: 90%;
+    position: relative;
 }
 #panel.bgi{
 background-image: url('confetti.gif');
 }
 #panel.on{
     opacity: 1;
+}
+/*DESTROY*/
+#panel >a{
+    text-decoration: none;
+    color: #f3f3f3;
+    padding: 0.5em;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    /* background-color: #333; */
+    font-weight: 600;
+    transition: bacground-color .3s;
+}
+#panel >a:hover{
+    background-color: #333;
 }
 #start{
     height: 4em;
